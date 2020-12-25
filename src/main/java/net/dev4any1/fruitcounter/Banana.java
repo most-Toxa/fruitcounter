@@ -1,4 +1,4 @@
-package FruitCounter;
+package net.dev4any1.fruitcounter;
 
 public class Banana implements Fruit {
 
