@@ -4,9 +4,10 @@ public class App {
 	public static void main(String args[]) {
 		System.out.println("new object created at" + System.currentTimeMillis());
 
-		FruitCounter fc = new FruitCounter();
-        
+		IFruitCounter ac = new AppleCounter();
+        IFruitCounter bc = new BananaCounter();
 		
-		System.out.println("total: " + fc.getFruitCount() + "; apples: "+ fc.appleCounter());
+		System.out.println("total: " + ac.getFruitSize() + "; apples: "+ ac.getCount());
+		System.out.println("total: " + bc.getFruitSize() + "; bananas: "+ bc.getCount());
 	}
 }
